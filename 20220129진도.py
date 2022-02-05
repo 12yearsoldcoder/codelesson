@@ -70,16 +70,16 @@
 # a = [1,2,3]
 # a.remove(2)
 # print(a)
-# a = [4,5,6]
-# a.pop(2)
-# print(a)
-# a.pop(0)
-# print(a)
+a = [4,5,6]
+a.pop(2)
+print(a)
+a.pop(0)
+print(a)
 # a=[1,2,3,1]
 # print(a.count(1))
 # print(a.count(0))
 # print(a.count(2))
-a = [1,2,3]
-print(a)
-a.extend([4,5])
-print(a)
+# a = [1,2,3]
+# print(a)
+# a.extend([4,5])
+# print(a)
