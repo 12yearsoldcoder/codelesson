@@ -44,19 +44,19 @@
 # else:
 #     print("땡")
 
-# fruit = {"봄" : "딸기", "여름" : "토마토", "가을" : "사과"}
-# value = input()
+# fruit = {"봄": "딸기", "여름": "토마토", "가을": "사과"}
+# value = input("과일 이름: ")
 # if value in fruit.values():
 #     print("정답입니다!")
 # else:
 #     print("땡!")
 
-# warn_investment_list = ["Microsoft", "Google", "Naver", "Kakao", "SAMSUNG", "LG"]
-# just = input()
-# if just in warn_investment_list:
-#     print("투자 경고 종목입니다")
-# else:
-#     print("투자 경고 종목이 아닙니다")
+warn_investment_list = ["Microsoft", "Google", "Naver", "Kakao", "SAMSUNG", "LG"]
+just = input()
+if just in warn_investment_list:
+    print("투자 경고 종목입니다")
+else:
+    print("투자 경고 종목이 아닙니다")
 
 # a = input()
 # if a.islower():
@@ -112,8 +112,8 @@
 # elif villagernumberend[0] == '2' or villagernumberend[0] == '4':
 #     print("여자입니다")
 
-villagernumber, villagernumberend = input().split('-')
-if villagernumberend[1:3] == '8' or villagernumberend[2] == '7' or villagernumberend[2] == '6' or villagernumberend[2] == '5' or villagernumberend[2] == '4' or villagernumberend[2] == '3' or villagernumberend[2] == '2' or villagernumberend[2] == '1' or villagernumberend[2] == '0':
-    print('서울주민입니다')
-else:
-    print('서울 주민 아니에요')
+# villagernumber, villagernumberend = input().split('-')
+# if villagernumberend[1:3] == '8' or villagernumberend[1:3] == '7' or villagernumberend[1:3] == '8':
+#     print('서울주민입니다')
+# else:
+#     print('서울 주민 아니에요')
