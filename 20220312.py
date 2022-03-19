@@ -44,35 +44,34 @@
 
 # 7
 
-# b = []
-# d = 0
-# e = 0
+# even = 0
+# odd = 0
+# L = []
 # while True:
 #     a = int(input())
 #     if a == 0:
 #         break
-#     b.append(a)
-# for i in b:
-#     if i // 2 == 0:
-#         d += 1
+#     L.append(a)
+# for i in L:
+#     if i % 2 == 0:
+#         even += 1
 #     else:
-#         e += 1
-# print('odd : ',e)
-# print('even : ',d)
-# 짝수의 조건 = 나누기 2를 하면 소수점 없는 값이 나오는것
+#         odd += 1
+# print('odd: %d' % odd)
+# print('even: %d' % even)
+
 
 
 # 8
-'''
-a,b,c,d = input().split(" ")
-e = (int(a)+int(b)+int(c)+int(d))/4
-print("avg : ",str(e)[:4])
-if e >= 80:
-    print("pass")
-'''
+
+# a,b,c,d = input().split(" ")
+# e = (int(a)+int(b)+int(c)+int(d))/4
+# print("avg : ",str(e)[:4])
+# if e >= 80:
+#     print("pass")
 
 # 9
-'''
+
 def nulbi():
     a = int(input())
     b = a*a*3.14
@@ -81,21 +80,23 @@ def nulbi():
     else:
         print(str(b)+'0')
 nulbi()
-'''
 
 # 와 제로부터 시작하는 a유형!
 
 # 1
+# 다음과 같이 출력되는 프로그램을 작성하라. 단. 등호 = 뒤에 값은 수식을 이용해 출력하시오
 # print("5 Dan")
 # print('5 * 2 = ', 5*2)
 
 # 2
+# 두개의 정수를 입력받아 곱과 나눈 값을 출력하시오
 # a = int(input())
 # b = int(input())
 # print('%d * %d = '%(a,b), a*b)
 # print('%d / %d = '%(a,b), a / b)
 
 # 3
+# 실수의 야드를 입력받아 cm으로 환산한 값을 출력하는 프로그램을 작성하시오 (1야드 = 0.9144m)
 # a = float(input())
 # y1 = 0.9144
 # print('%d yard = '%(a),a*(y1*100))
@@ -105,10 +106,3 @@ nulbi()
 # b = input()
 # print('%s and %s'%(a,b))
 # print('%s&%s'%(a,b))
-
-# 5
-a = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
-b = int(input())
-for i in a:
-    if i%3 == type(int):
-        print(i)
