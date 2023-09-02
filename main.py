@@ -1,56 +1,97 @@
-class Hanglenum:
-    def __init__(self, data):
-        if type(data) is not str:
-            raise TypeError("문자열를 입력해주세요")
-        self.num = data
+# def main():
+#     l = []
+#     n = int(input())
+#     data = 0
+#     link = 0
+#     cnt = 0
+#     for i in range(n):
+#         l.append(int(input()))
+#     for i in l:
+#         if i == 0:
+#             cnt -= data
+#             data = link
+#             print(link)
+#         else:
+#             cnt += i
+#             link = data
+#             print(link)
+#             data = i
+#     print(cnt)
+#
+# if __name__ == '__main__':
+#     main()
 
-    def __int__(self):
-        int = 0
-        plusorminus = 1
-        if "마이너스" in self.num:
-            plusorminus = -1
-            self.num = self.num[4:]
-        buffer = 0
-        l1 = {"천": 1000, "백": 100, "십": 10, "일": 1, "만": 10000, "억" : 100000000}
-        l2 = {"영": 0, '일': 1, "이": 2, '삼': 3, "사": 4, '오': 5, '육': 6, "칠": 7, '팔': 8, "구": 9}
-        for i in self.num:
-            if i in l1:
-                if buffer == 0:
-                    int += l1[i]
-                    continue
-                else:
-                    int += buffer*l1[i]
-                    buffer = 0
-                    continue
-            buffer += l2[i]
+# K = int(input())
+# arr = []
+# for _ in range(K):
+#     x = int(input())
+#     if x:
+#         arr.append(x)
+#     else:
+#         arr.pop()
+# print(sum(arr))
 
-        return plusorminus*(int + buffer)
+# n = int(input())
+# l = []
+# case_cnt = 1
+# for i in range(n):
+#     l.append(input())
+# for i in l:
+#     string = ""
+#     slices = i.split()
+#     back = slices[-1]
+#     slices[-1] = slices[0]
+#     slices[0] = back
+#     for j in slices:
+#         string += j + ' '
+#     print(f"Case #{case_cnt}: {string.rstrip()}")
+#     case_cnt += 1
+# a, l= input().split(), []
+# for i in a: l.append(int(i))
+# print(sum(l))
+#
+# import sys
+# n = int(input())
+# l = []
+# stack = []
+# for i in range(n):
+#     inp = sys.stdin.readline()
+#     l.append(inp.strip('\n'))
+# for i in l:
+#     if i[0] == '1':
+#         stack.append(i[2])
+#     if i[0] == '2':
+#         try:
+#             print(stack[1:])
+#         except:
+#             print(-1)
+#     if i[0] == '3':
+#         print(len(stack))
+#     if i[0] == '4':
+#         if len(stack) == 0:
+#             print(1)
+#         else:
+#             print(0)
+#     if i[0] == '5':
+#         try:
+#             print(stack[0])
+#         except:
+#             print(-1)
 
-    def __str__(self):
-        string = ""
-        l1 = {1000: '천', 100: "백", 10: "십", 1: "일"}
-        l2 = {0: "영", 1: '일', 2: "이", 3: '삼', 4: "사", 5: '오', 6: '육', 7: "칠", 8: '팔', 9: "구"}
-        if str(self.num)[0] == "-":
-            string += "마이너스"
-            self.num = int(str(self.num)[1:])
-        if self.num in l1.keys():
-            return l1[self.num]
-        if self.num in l2.keys():
-            return l2[self.num]
-        while len(str(self.num)) != 1:
-            for i in l1.keys():
-                front = l2[int(str(self.num)[0])]
-                if self.num%i != self.num:
-                    if front == "일":
-                        string += l1[i]
-                    else:
-                        string += front + l1[i]
-                    self.num %= i
-        for j in l2.values():
-            if j + "일" in string:
-                string = string[:-1]
-        return string
-
-
-a = Hanglenum("이억만이천삼백사십오")
-print(int(a))
+inp = input()
+dic = {'H' : 1, 'C' : 12, 'O' : 16}
+start_end = False
+not_Parenthesis = 0
+Parenthesis = 0
+for i in inp:
+    if i == '(':
+        start_end = True
+        continue
+    elif i == ')':
+        start_end = False
+        continue
+    if i.isalnum():
+        if start_end
+    if not start_end:
+        not_Parenthesis += dic[i]
+print(Parenthesis + not_Parenthesis)
